@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — KUKA Consult</title>
+    <meta name="description" content="Contactez KUKA Consult pour vos projets qualité, métrologie et dispositifs médicaux.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+  <link rel="icon" type="image/png" sizes="32x32" href="Images/logo.png">
+  <link rel="shortcut icon" type="image/png" href="Images/logo.png">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <nav class="navbar">
+            <a href="index.html" class="brand">
+            <img src="Images/logo.png" class="brand-logo-img" alt="Logo KUKA Consult" />
+            <span class="brand-text">KUKA Consult</span>
+        </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="a-propos.html" class="nav-link">À propos</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="formations.html" class="nav-link">Formations</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="temoignages.html" class="nav-link">Témoignages</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Contactez-nous</h1>
+            <p class="page-description">
+                Parlons de vos projets qualité. Notre équipe est à votre écoute.
+            </p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-layout">
+
+                <!-- Formulaire principal -->
+                <div class="card">
+                    <h2 style="margin-bottom: 24px; color: var(--color-text);">Formulaire de Contact</h2>
+
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nom et prénom *</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email professionnel *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company" class="form-label">Organisation</label>
+                            <input type="text" id="company" name="company" class="form-input" placeholder="Nom de votre entreprise ou établissement">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+33 X XX XX XX XX">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Sujet de votre demande</label>
+                            <select id="subject" name="subject" class="form-select">
+                                <option value="">-- Sélectionnez --</option>
+                                <option value="audit">Audit qualité / Certification</option>
+                                <option value="formation">Formation</option>
+                                <option value="conseil">Mission de conseil</option>
+                                <option value="metrologie">Métrologie</option>
+                                <option value="dm">Dispositifs médicaux</option>
+                                <option value="recherche">Recherche clinique</option>
+                                <option value="information">Demande d'information</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Votre message *</label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Décrivez votre projet, vos besoins ou vos questions..." required></textarea>
+                        </div>
+
+                        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                            <button type="submit" class="btn btn-primary" style="flex: 1; min-width: 140px;">Envoyer</button>
+                            <button type="reset" class="btn btn-outline">Effacer</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Informations de contact -->
+                <div>
+                    <div class="card" style="margin-bottom: 24px;">
+                        <h3 style="margin-bottom: 16px; color: var(--color-text);">📧 Contact Direct</h3>
+                        <p><strong>Email :</strong><br>
+                        <a href="mailto:contact@kukaconsult.com">contact@kukaconsult.com</a></p>
+                        <p><strong>Téléphone :</strong><br>
+                        +33 [À compléter]</p>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 24px;">
+                        <h3 style="margin-bottom: 16px; color: var(--color-text);">⚡ Contact rapide</h3>
+                        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                            <a class="btn btn-whatsapp" href="https://wa.me/33601020304" target="_blank" rel="noopener">WhatsApp</a>
+                            <a class="btn btn-call" href="tel:+33601020304">Appeler</a>
+                        </div>
+                        <p style="font-size: 14px; color: var(--color-text-secondary); margin-top: 8px;">Données fictives pour démonstration.</p>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 24px;">
+                        <h3 style="margin-bottom: 16px; color: var(--color-text);">🕐 Délais de Réponse</h3>
+                        <p><strong>Email :</strong> Sous 24h en moyenne</p>
+                        <p><strong>Premier échange :</strong> Sous 48h</p>
+                        <p><strong>Devis :</strong> Sous 5 jours ouvrés</p>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 24px;">
+                        <h3 style="margin-bottom: 16px; color: var(--color-text);">🌍 Zone d'Intervention</h3>
+                        <p>• France métropolitaine</p>
+                        <p>• DOM-TOM sur demande</p>
+                        <p>• International possible</p>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 24px;">
+                        <h3 style="margin-bottom: 16px; color: var(--color-text);">📍 Nous trouver</h3>
+                        <div style="border-radius: 6px; overflow: hidden;">
+                            <iframe src="https://www.google.com/maps?q=Paris,+France&output=embed" width="100%" height="250" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <p style="font-size: 14px; color: var(--color-text-secondary); margin-top: 8px;">Adresse fictive : Paris, France.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="margin-bottom: 16px; color: var(--color-text);">💼 Premiers Échanges</h3>
+                        <p>Tous nos premiers échanges sont <strong>gratuits et sans engagement</strong>.</p>
+                        <p style="font-size: 14px; color: var(--color-text-secondary); margin-top: 12px;">
+                            Nous prenons le temps de comprendre vos enjeux avant de vous proposer une solution adaptée.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header">
+                <h2 class="section-title">Modalités d'Échange</h2>
+                <p class="section-description">
+                    Choisissez le format qui vous convient le mieux
+                </p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">📞</div>
+                    <h3 class="card-title">Échange Téléphonique</h3>
+                    <p class="card-description">
+                        Appel de 30 minutes pour faire connaissance, comprendre vos enjeux et définir les contours de votre projet.
+                    </p>
+                    <p style="font-size: 14px; color: var(--color-text-secondary); margin-top: 8px;">
+                        <strong>Idéal pour :</strong> Premier contact, cadrage rapide
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">💻</div>
+                    <h3 class="card-title">Visioconférence</h3>
+                    <p class="card-description">
+                        Réunion en ligne avec partage d'écran pour présenter vos processus actuels et discuter des solutions envisagées.
+                    </p>
+                    <p style="font-size: 14px; color: var(--color-text-secondary); margin-top: 8px;">
+                        <strong>Idéal pour :</strong> Présentation détaillée, formation à distance
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🏢</div>
+                    <h3 class="card-title">Visite sur Site</h3>
+                    <p class="card-description">
+                        Diagnostic terrain avec analyse de vos processus actuels et identification des axes d'amélioration prioritaires.
+                    </p>
+                    <p style="font-size: 14px; color: var(--color-text-secondary); margin-top: 8px;">
+                        <strong>Idéal pour :</strong> Audit préalable, projets complexes
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>KUKA Consult</h3>
+                <p>Cabinet de conseil spécialisé en qualité, métrologie, réglementation des dispositifs médicaux et formation.</p>
+                <p>Expertise reconnue au service de l'excellence dans la santé.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <p><a href="services.html">Management de la qualité</a></p>
+                <p><a href="services.html">Métrologie & équipements</a></p>
+                <p><a href="services.html">Dispositifs médicaux</a></p>
+                <p><a href="formations.html">Formations spécialisées</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Ressources</h3>
+                <p><a href="blog.html">Blog & actualités</a></p>
+                <p><a href="temoignages.html">Témoignages clients</a></p>
+                <p><a href="a-propos.html">À propos de nous</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><strong>Email:</strong> contact@kukaconsult.com</p>
+                <p><strong>Téléphone:</strong> +33 [À compléter]</p>
+                <p><a href="contact.html">Formulaire de contact</a></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 KUKA Consult. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<button class="scroll-top" id="scrollTopBtn" aria-label="Haut de page">↑</button>
+<button class="theme-toggle" id="themeToggle" aria-label="Basculer thème">Mode sombre</button>
+</body>
+</html>
